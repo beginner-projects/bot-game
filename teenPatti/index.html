@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <title>Teen Patti</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="btn-logo-container">
+      <img src="../assets/rami.svg" alt="Logo" class="logo" />
+      <div id="ton-connect"></div>
+    </div>
+    <div id="game">
+      <div id="player1" class="player">
+        <div class="cards"></div>
+        <h2 class="pl12">Player 1</h2>
+        <div class="result"></div>
+      </div>
+      <div id="player2" class="player">
+        <div class="cards"></div>
+        <h2 class="pl12">Player 2</h2>
+        <div class="result"></div>
+      </div>
+      <!-- button -->
+      <button
+        class="button-3d button-3d_md button-3d_red button-3d_center snipcss-oqtTP"
+        type="button"
+        id="dealButton"
+        data-v-c52b0d74=""
+        data-v-f4851aa1=""
+      >
+        <span class="button-3d__outer" data-v-f4851aa1=""
+          ><span class="button-3d__inner" data-v-f4851aa1=""
+            ><span class="button-3d__text" data-v-f4851aa1=""
+              >Deal Cards</span
+            ></span
+          ></span
+        >
+      </button>
+      <!-- button -->
+    </div>
+    <script>
+      const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: "https://t.me/pavankabot/tonconnect-manifest.json",
+        buttonRootId: "ton-connect",
+      });
+
+      async function connectToWallet() {
+        const connectedWallet = await tonConnectUI.connectWallet();
+        // Do something with connectedWallet if needed
+        console.log(connectedWallet);
+      }
+
+      // Call the function
+      connectToWallet().catch((error) => {
+        console.error("Error connecting to wallet:", error);
+      });
+
+      tonConnectUI.uiOptions = {
+        twaReturnUrl: "https://t.me/t.me/pavankabot",
+      };
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

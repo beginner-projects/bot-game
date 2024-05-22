@@ -1,0 +1,283 @@
+@font-face {
+  font-display: swap;
+  font-family: Montserrat Variable;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://betfury.io/_nuxt/montserrat-cyrillic-ext-wght-normal.rV1oiNxr.woff2)
+    format("woff2-variations");
+  unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f,
+    u+fe2e-fe2f;
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat Variable;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://betfury.io/_nuxt/montserrat-cyrillic-wght-normal.CHYi_LmU.woff2)
+    format("woff2-variations");
+  unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat Variable;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://betfury.io/_nuxt/montserrat-vietnamese-wght-normal.BXWSX9tz.woff2)
+    format("woff2-variations");
+  unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1,
+    u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329,
+    u+1ea0-1ef9, u+20ab;
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat Variable;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://betfury.io/_nuxt/montserrat-latin-ext-wght-normal.BIVePy9u.woff2)
+    format("woff2-variations");
+  unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff,
+    u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff;
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat Variable;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://betfury.io/_nuxt/montserrat-latin-wght-normal.BDA6280a.woff2)
+    format("woff2-variations");
+  unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
+    u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191,
+    u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+:root {
+  --color_background-100: #0d131c;
+  --color_white: #fff;
+  --color_blue: #2283f6;
+}
+
+body {
+  font-family: "Montserrat Variable", sans-serif;
+  background: white;
+}
+
+.btn-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Optional: to give a background color to the container */
+}
+
+.logo {
+  height: 90px; /* Adjust the height as needed */
+  margin-right: 20px;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.player {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+}
+
+.result {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: -20px;
+}
+
+.card {
+  width: 110px;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the entire card */
+  margin-right: 5px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure the content within the card respects the border-radius */
+}
+
+/* button ---------------------------------- */
+
+:where(:root) {
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  min-height: 100vh;
+}
+
+:root {
+  --color_background-100: #0d131c;
+  --color_white: #fff;
+  --color_blue: #2283f6;
+}
+
+:where(button, input, select) {
+  margin: 0;
+}
+
+:where(button, input, select, textarea) {
+  background-color: transparent;
+  border: 1px solid;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0.25em 0.375em;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-3d[data-v-f4851aa1] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.button-3d[data-v-f4851aa1] {
+  align-items: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button-3d_md.button-3d[data-v-f4851aa1] {
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+.button-3d[data-v-f4851aa1],
+.button-3d[data-v-f4851aa1]:after {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.button-3d[data-v-f4851aa1]:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.button-3d_red.button-3d[data-v-f4851aa1]:after {
+  background-color: #61001d;
+}
+
+.button-3d_md.button-3d[data-v-f4851aa1]:after {
+  border-radius: 10px;
+  height: 44px;
+}
+
+:selection {
+  background-color: var(--color_blue);
+  color: var(--color_white);
+}
+
+.button-3d__outer[data-v-f4851aa1] {
+  display: block;
+  height: 100%;
+  position: relative;
+  transition: transform 0.1s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+.button-3d__outer[data-v-f4851aa1] {
+  background: linear-gradient(1turn, #c4003b 0.8%, #fb1949);
+  box-shadow: 0 3px 16px #ff234180, inset 0 4px 3px #ffffff4d;
+}
+
+.button-3d__outer[data-v-f4851aa1] {
+  border-radius: 10px;
+}
+
+.button-3d_md:not(.button-3d_only-icon) .button-3d__outer[data-v-f4851aa1] {
+  padding: 10px 32px;
+}
+
+.button-3d_red.button-3d:hover .button-3d__outer[data-v-f4851aa1] {
+  background: linear-gradient(3360deg, #db0a49 0.8%, #fb2b57);
+  box-shadow: 0 3px 20px #ff234199, inset 0 4px 4px #ffffff5e;
+}
+
+.button-3d_md.button-3d:hover .button-3d__outer[data-v-f4851aa1] {
+  transform: translateY(-2px);
+}
+
+.button-3d__inner[data-v-f4851aa1] {
+  height: 100%;
+  width: 100%;
+}
+
+.button-3d__inner[data-v-f4851aa1] {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-3d__inner[data-v-f4851aa1] {
+  justify-content: center;
+}
+
+.button-3d__text[data-v-f4851aa1] {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.button-3d__text[data-v-f4851aa1] {
+  color: var(--color_white);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-weight: 600;
+}
+
+.button-3d__text[data-v-f4851aa1] {
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  line-height: 24px;
+}
